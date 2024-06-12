@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RelatiiveLayout</string>
+    <string name="spacestation">Space Station</string>
+    <string name="minus">-</string>
+    <string name="add">+</string>
+    <string name="divide">/</string>
+    <string name="mul">*</string>
+    <string name="number">Number</string>
+</resources>

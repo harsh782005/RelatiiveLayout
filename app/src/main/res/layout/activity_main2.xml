@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Calculator"
+    android:layout_above="@id/div"
+    android:layout_centerHorizontal="true"
+    android:textStyle="bold"
+    android:textSize="40sp"
+    android:id="@+id/cal"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="press one button"
+        android:layout_below="@id/cal"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:drawableEnd="@color/black"
+        >
+
+    </Button>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:textSize="50dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/value"
+        >
+
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+
+
+        >
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/value"
+        android:layout_centerHorizontal="true"
+        android:text="/"
+        android:id="@+id/div"
+        android:layout_marginTop="250dp"
+
+        >
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:layout_below="@id/value"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mul"
+        >
+
+    </Button>
+
+</RelativeLayout>

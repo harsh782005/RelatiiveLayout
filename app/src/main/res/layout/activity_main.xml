@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text"
+        android:background="#B6B2B2"
+        android:text="Space Station"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centrebutton"
+        android:layout_centerHorizontal="true"
+        android:background="#B6B2B2"
+        android:text="Flights"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text2"
+        android:layout_toEndOf="@id/text2"
+        android:background="#B6B2B2"
+        android:text="Rover"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="155dp"
+        android:layout_height="140dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="-30dp"
+        android:layout_toStartOf="@id/centrebutton"
+        android:background="#009688"
+        android:gravity="center"
+        android:text="DCA"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="155dp"
+        android:layout_height="140dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="45dp"
+        android:layout_toEndOf="@id/centrebutton"
+        android:background="#009688"
+        android:gravity="center"
+        android:text="MARS"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/centrebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:text="Cenyter button"
+        android:textColor="#FDF7F7" />
+
+    <TextView
+        android:id="@+id/oneway"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/text"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="44dp"
+        android:background="#FF9800"
+        android:text="One way"
+
+        />
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/oneway"
+        android:layout_marginTop="50dp"
+        android:background="#FF9800"
+        android:text="1 Traveller"
+
+
+        />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/oneway"
+        android:layout_marginLeft="-40dp"
+        android:layout_toEndOf="@id/oneway" />
+
+    <Button
+        android:id="@+id/movetonext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/two"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="movetonext">
+
+    </Button>
+</RelativeLayout>
