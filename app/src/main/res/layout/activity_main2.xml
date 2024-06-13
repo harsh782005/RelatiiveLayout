@@ -5,80 +5,60 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity2">
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Calculator"
-    android:layout_above="@id/div"
     android:layout_centerHorizontal="true"
+    android:textSize="40dp"
+    android:id="@+id/cal"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="press one button"
+    android:layout_below="@id/cal"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50sp"
     android:textStyle="bold"
-    android:textSize="40sp"
-    android:id="@+id/cal"
-    />
-    <TextView
+    android:textSize="15dp"/>    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="press one button"
-        android:layout_below="@id/cal"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:layout_marginTop="50dp"
-
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:drawableEnd="@color/black"
-        >
-
-    </Button>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="0"
-        android:textSize="50dp"
+        android:id="@+id/btnNumber"
         android:layout_centerInParent="true"
-        android:id="@+id/value"
-        >
+        android:text="@string/number"/>
 
-    </EditText>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="+"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-
-
-        >
-
-    </Button>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/value"
+        android:id="@+id/btnMul"
+        android:layout_above="@id/btnNumber"
         android:layout_centerHorizontal="true"
-        android:text="/"
-        android:id="@+id/div"
-        android:layout_marginTop="250dp"
+        android:text="@string/mul"/>
 
-        >
-
-    </Button>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="*"
-        android:layout_below="@id/value"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/mul"
-        >
+        android:id="@+id/btnDiv"
+        android:text="@string/divide"
+        android:layout_below="@id/btnNumber"
+        android:layout_centerHorizontal="true"/>
 
-    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minus"
+        android:id="@+id/btnMinus"
+        android:layout_toStartOf="@id/btnNumber"
+        android:layout_alignBaseline="@id/btnNumber"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAdd"
+        android:text="@string/add"
+        android:layout_toEndOf="@id/btnNumber"
+        android:layout_alignBaseline="@id/btnNumber"/>
+
 
 </RelativeLayout>
