@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
-    var movetonext:Button?=null
+    var movetonext: Button? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -21,11 +21,11 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         Toast.makeText(this, "on create called", Toast.LENGTH_SHORT).show()
-movetonext=findViewById(R.id.movetonext)
-      movetonext?.setOnClickListener {
-          var intent=Intent(this,MainActivity2::class.java)
-          startActivity(intent)
-      }
+        movetonext = findViewById(R.id.movetonext)
+        movetonext?.setOnClickListener {
+            var intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
+        }
 
 
     }
@@ -37,12 +37,13 @@ movetonext=findViewById(R.id.movetonext)
 
     override fun onStart() {
         super.onStart()
-Toast.makeText(this,"on start called",Toast.LENGTH_SHORT).show()    }
+        Toast.makeText(this, "on start called", Toast.LENGTH_SHORT).show()
+    }
 
     override fun onPause() {
         super.onPause()
-        Toast.makeText(this,"on start called",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "on start called", Toast.LENGTH_SHORT).show()
 
     }
 
-    }
+}
